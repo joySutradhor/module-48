@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Country from './Components/Country/Country';
+import Header from './Components/Header/Header';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-     <RestCountries></RestCountries>
+      <Header></Header>
+      <Country></Country>
+      <About></About>
+      <Footer></Footer>
     </div>
   );
 }
