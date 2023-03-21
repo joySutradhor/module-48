@@ -1,23 +1,25 @@
 import './App.css';
-import { useEffect, useState } from 'react';
-import Country from './Components/Country/Country';
+// import { useEffect, useState } from 'react';
+// import Country from './Components/Country/Country';
 import Header from './Components/Header/Header';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
+import AllCountries from './Components/Countries/Coutries';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Country></Country>
+      {/* <Country></Country> */}
       <About></About>
       <Footer></Footer>
+      <AllCountries></AllCountries>
     </div>
   );
 }
 
 
-function RestCountries(){
+/* function RestCountries(){
   const [countries, setCountries] = useState([]);
   useEffect(()=>{
     fetch("https://restcountries.com/v3.1/all")
@@ -43,6 +45,6 @@ function ShowUi (props) {
       <h2>Capital : {props.capital}</h2>
     </div>
   )
-}
+} */
 
 export default App;
