@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Country from '../SingleCountry/Country';
-
+import "./Countries.css";
 
 const AllCountries = () => {
     const [countries , setCountries] = useState([]);
@@ -10,13 +10,15 @@ const AllCountries = () => {
         .then(res => res.json())
         .then(data => setCountries(data))
     },[])
-    // console.log(countries[0].status)
+
     return (
         <div>
             <h3>Total Country is : {countries.length}</h3>
+            <div className="singleCountryContainer">
             {
-                countries.map(country => <Country name= {country.name.common} capital = {country.capital}></Country> )
+                countries.map(country => <Country country = {country}></Country> )
             }
+            </div>
         </div>
     );
 };
