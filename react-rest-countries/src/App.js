@@ -12,8 +12,8 @@ function App() {
       <Header></Header>
       {/* <Country></Country> */}
       <About></About>
-      <Footer></Footer>
       <AllCountries></AllCountries>
+      <Footer></Footer>
     </div>
   );
 }

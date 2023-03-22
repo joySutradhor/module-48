@@ -13,10 +13,10 @@ const AllCountries = () => {
 
     return (
         <div>
-            <h3>Total Country is : {countries.length}</h3>
+            <h3>Total Country length is : {countries.length}</h3>
             <div className="singleCountryContainer">
             {
-                countries.map(country => <Country country = {country}></Country> )
+                countries.map(country => <Country country = {country} ></Country> )
             }
             </div>
         </div>
